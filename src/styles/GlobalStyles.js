@@ -7,7 +7,7 @@ const {width, height} = Dimensions.get('window');
 const styles = StyleSheet.create({
     container: {
         backgroundColor: colors.blue,
-        paddingHorizontal: 40,
+        paddingHorizontal: 20,
         flex: 1,
     },
     text: {

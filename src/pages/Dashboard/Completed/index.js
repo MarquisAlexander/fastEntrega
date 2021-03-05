@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text, TouchableOpacity,  } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
+import GlobalStyles from '../../../styles/GlobalStyles';
 
 import SearchBar from '../../../components/SearchBar';
 import Card from '../../../components/Card';
@@ -10,7 +11,10 @@ import colors from '../../../styles/colors'
 
 function Dashboard({navigation}) {
     return (
-        <View style={styles.container}>
+        <>
+        <View style={styles.background}>
+        </View>
+        <ScrollView style={styles.container}>
             <View style={styles.header}>
                 <View style={styles.welcomeUser}>
                     <Text style={styles.text}>Bem vindo,</Text>   
@@ -41,8 +45,24 @@ function Dashboard({navigation}) {
                 <View style={styles.line}></View>
             </View>
 
-            <Card />
-        </View>
+            <Card 
+                date={'28/08/2020'}
+                title={'Pacote 20'}
+            />
+            <Card 
+                date={'28/08/2020'}
+                title={'Pacote 20'}
+            />
+            <Card 
+                date={'28/08/2020'}
+                title={'Pacote 20'}
+            />
+            <Card 
+                date={'28/08/2020'}
+                title={'Pacote 20'}
+            />
+        </ScrollView>
+        </>
     )
 }
 

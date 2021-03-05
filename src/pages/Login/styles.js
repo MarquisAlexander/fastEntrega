@@ -5,7 +5,7 @@ const {width, height} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
     header: {
-        marginTop: (height * 10) / 100,
+        marginTop: (height * 5) / 100,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
