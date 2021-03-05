@@ -6,9 +6,9 @@ import Icon from 'react-native-vector-icons/Feather';
 
 import styles from './styles';
 
-function Card({navigation, title, date}) {
+function Card({title, date}) {
     return (
-        <TouchableOpacity>
+        <>
             <View style={styles.card}>
                 <View style={styles.header}>
                     <View style={styles.pacote}>
@@ -35,7 +35,7 @@ function Card({navigation, title, date}) {
                     <Text style={styles.textRodape}>Detalhes</Text>
                     <Icon name="arrow-right" size={20} color={colors.textTitle} />
             </View>
-        </TouchableOpacity>
+        </>
     )
 }
 

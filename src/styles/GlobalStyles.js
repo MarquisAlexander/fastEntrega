@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
 
         alignItems: 'center',
         paddingTop: (height * 2) / 100,
-        marginTop: (height * 5) / 100,
     },
     textButton: {
         fontSize: (height * 3) / 100,

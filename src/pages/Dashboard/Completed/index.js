@@ -45,22 +45,38 @@ function Dashboard({navigation}) {
                 <View style={styles.line}></View>
             </View>
 
-            <Card 
-                date={'28/08/2020'}
-                title={'Pacote 20'}
-            />
-            <Card 
-                date={'28/08/2020'}
-                title={'Pacote 20'}
-            />
-            <Card 
-                date={'28/08/2020'}
-                title={'Pacote 20'}
-            />
-            <Card 
-                date={'28/08/2020'}
-                title={'Pacote 20'}
-            />
+            <TouchableOpacity
+                onPress={() => navigation.navigate('Details')}
+            >
+                <Card 
+                    date={'28/08/2020'}
+                    title={'Pacote 20'}
+                />
+            </TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => navigation.navigate('Details')}
+            >
+                <Card 
+                    date={'28/08/2020'}
+                    title={'Pacote 20'}
+                />
+            </TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => navigation.navigate('Details')}
+            >
+                <Card 
+                    date={'28/08/2020'}
+                    title={'Pacote 20'}
+                />
+            </TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => navigation.navigate('Details')}
+            >
+                <Card 
+                    date={'28/08/2020'}
+                    title={'Pacote 20'}
+                />
+            </TouchableOpacity>
         </ScrollView>
         </>
     )

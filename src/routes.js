@@ -4,9 +4,11 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {createStackNavigator} from '@react-navigation/stack';
 
 import Login from './pages/Login';
+import Details from './pages/Details';
 import ResetPassword from './pages/ResetPassword';
 import Dashboard from './pages/Dashboard/Completed';
 import Pendents from './pages/Dashboard/Pendents';
+
 import { color } from 'react-native-reanimated';
 import colors from './styles/colors';
 
@@ -45,6 +47,7 @@ function Routes() {
             >
                 <Stack.Screen name="Login" component={Login} />
                 <Stack.Screen name="ResetPassword" component={ResetPassword} />
+                <Stack.Screen name="Details" component={Details} />
                 <Stack.Screen name="Dashboard" component={TabNavigation} />
             </Stack.Navigator>
         </NavigationContainer>

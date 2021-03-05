@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     },
     boxMoreInfo: {
         marginTop: (height * 2) / 100,
+        marginBottom: (height * 10) / 100,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
